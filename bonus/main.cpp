@@ -5,14 +5,14 @@
 ** main.cpp
 */
 
-#include "Knight.hpp"
+#include "Enchanter.hpp"
 
 int main(void)
 {
-    Knight knight("Arthur", 20);
-    knight.attack();
-    knight.special();
-    knight.rest();
-    knight.special();
-    knight.damage(50);
+    Enchanter enchanter("Merlin", 20);
+    enchanter.attack();
+    enchanter.special();
+    enchanter.rest();
+    enchanter.special();
+    enchanter.damage(50);
 }
