@@ -5,11 +5,11 @@
 ** Peasant.cpp
 */
 
-#include <iostream>
+#include <algorithm>
 #include <format>
+#include <iostream>
 
 #include "Peasant.hpp"
-
 
 Peasant::Peasant(const std::string& name, int power)
 {
