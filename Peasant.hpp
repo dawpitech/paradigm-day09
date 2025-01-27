@@ -10,22 +10,24 @@
 
     #include <string>
 
-class Peasant
+    #include "ICharacter.hpp"
+
+class Peasant : public ICharacter
 {
     public:
         explicit Peasant(const std::string &name, int power);
-        ~Peasant();
-        const std::string &getName() const { return this->_name; }
-        int getPower() const { return this->_power; }
-        int getHp() const { return this->_hp; }
+        ~Peasant() override;
+        const std::string& getName() const override { return this->_name; }
+        int getPower() const override { return this->_power; }
+        int getHp() const override { return this->_hp; }
 
         void setPower(int power);
         void setHp(int hp);
 
-        int attack();
-        int special();
-        void rest();
-        void damage(int damage);
+        int attack() override;
+        int special() override;
+        void rest() override;
+        void damage(int damage) override;
 
     protected:
         std::string _name;

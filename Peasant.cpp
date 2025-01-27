@@ -24,7 +24,6 @@ Peasant::~Peasant()
     this->printName("is back to his crops.");
 }
 
-
 void Peasant::setHp(const int hp)
 {
     this->_hp = std::clamp(hp, 0, 100);

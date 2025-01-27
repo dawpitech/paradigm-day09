@@ -17,9 +17,9 @@ class Paladin : virtual public Knight, virtual public Priest
         explicit Paladin(const std::string &name, int power);
         ~Paladin();
 
-        using Knight::attack;
-        using Enchanter::special;
-        using Priest::rest;
+        int attack() override { return this->Knight::attack(); }
+        int special() override { return this->Enchanter::special(); }
+        void rest() override { return this->Priest::rest(); }
         void damage(int damage) { return this->Knight::damage(damage); }
 };
 #endif //PALADIN_HPP
