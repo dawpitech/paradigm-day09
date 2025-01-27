@@ -60,7 +60,7 @@ int Peasant::technique(int pow_cost, int dmg, std::string output)
 
 int Peasant::attack()
 {
-    return technique(10, 5, "tosses a stone");
+    return technique(10, 5, "tosses a stone.");
 }
 
 int Peasant::special()
