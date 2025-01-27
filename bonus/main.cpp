@@ -5,13 +5,14 @@
 ** main.cpp
 */
 
-#include "Peasant.hpp"
+#include "Knight.hpp"
 
 int main(void)
 {
-    Peasant peasant("Gildas", 42);
-    peasant.damage(50);
-    peasant.damage(100);
-    peasant.damage(200);
-    peasant.rest();
+    Knight knight("Arthur", 20);
+    knight.attack();
+    knight.special();
+    knight.rest();
+    knight.special();
+    knight.damage(50);
 }

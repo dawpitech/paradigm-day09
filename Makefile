@@ -21,6 +21,7 @@ BDIR	=	.build/release
 
 SRC	=	bonus/main.cpp
 SRC	+=	Peasant.cpp
+SRC	+=	Knight.cpp
 
 OBJ = $(SRC:%.cpp=$(BDIR)/%.o)
 
