@@ -10,7 +10,7 @@
 
     #include "Peasant.hpp"
 
-class Enchanter : public Peasant
+class Enchanter : virtual public Peasant
 {
 public:
     explicit Enchanter(const std::string &name, int power);

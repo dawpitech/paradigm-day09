@@ -10,7 +10,7 @@
 
     #include "Enchanter.hpp"
 
-class Priest : public Enchanter
+class Priest : virtual public Enchanter
 {
 public:
     explicit Priest(const std::string &name, int power);
