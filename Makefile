@@ -24,6 +24,7 @@ SRC	+=	Peasant.cpp
 SRC	+=	Knight.cpp
 SRC	+=	Enchanter.cpp
 SRC	+=	Priest.cpp
+SRC	+=	Paladin.cpp
 
 OBJ = $(SRC:%.cpp=$(BDIR)/%.o)
 

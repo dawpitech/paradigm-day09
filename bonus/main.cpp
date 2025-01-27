@@ -5,13 +5,13 @@
 ** main.cpp
 */
 
-#include "Priest.hpp"
+#include "Paladin.hpp"
 
 int main(void)
 {
-    Priest priest("Trichelieu", 20);
-    priest.attack();
-    priest.special();
-    priest.rest();
-    priest.damage(50);
+    Paladin paladin("Uther", 99);
+    paladin.attack();
+    paladin.special();
+    paladin.rest();
+    paladin.damage(50);
 }
