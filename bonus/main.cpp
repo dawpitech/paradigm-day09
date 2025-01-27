@@ -5,14 +5,13 @@
 ** main.cpp
 */
 
-#include "Enchanter.hpp"
+#include "Priest.hpp"
 
 int main(void)
 {
-    Enchanter enchanter("Merlin", 20);
-    enchanter.attack();
-    enchanter.special();
-    enchanter.rest();
-    enchanter.special();
-    enchanter.damage(50);
+    Priest priest("Trichelieu", 20);
+    priest.attack();
+    priest.special();
+    priest.rest();
+    priest.damage(50);
 }

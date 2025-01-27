@@ -23,6 +23,7 @@ SRC	=	bonus/main.cpp
 SRC	+=	Peasant.cpp
 SRC	+=	Knight.cpp
 SRC	+=	Enchanter.cpp
+SRC	+=	Priest.cpp
 
 OBJ = $(SRC:%.cpp=$(BDIR)/%.o)
 
