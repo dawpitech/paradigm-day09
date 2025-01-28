@@ -42,14 +42,14 @@ void Peasant::printName(const std::string str) const
 
 int Peasant::technique(int pow_cost, int dmg, std::string output)
 {
-    if (pow_cost > this->getPower())
-    {
-        this->printName("is out of power.");
-        return 0;
-    }
     if (this->getHp() == 0)
     {
         this->printName("is out of combat.");
+        return 0;
+    }
+    if (pow_cost > this->getPower())
+    {
+        this->printName("is out of power.");
         return 0;
     }
     this->setPower(this->getPower() - pow_cost);
