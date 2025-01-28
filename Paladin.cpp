@@ -18,5 +18,5 @@ Paladin::Paladin(const std::string& name, int power):
 
 Paladin::~Paladin()
 {
-    this->printName("is blessed");
+    this->printName("is blessed.");
 }
